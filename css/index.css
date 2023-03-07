@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Cairo;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+@font-face {
+    font-family: CairoBold;
+    src: url(../fonts/Cairo-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+}
+body {
+    background: #315D83;
+}
+.contect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: #fff;
+    width: 80%;
+}
+.contect header {
+    display: flex;
+    justify-content: space-between;
+}
+.contect header > div {
+    flex: 1;
+}
+.contect header .image {
+    display: flex;
+    align-items: flex-end;
+}
+.contect header .image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.contect header .logo img {
+    max-width: 200px;
+}
+.contect header .title {
+    display: flex;
+    flex-direction: column;
+    color: #315D83;
+    font-size: 4rem;
+    line-height: 1;
+}
+.contect header .title span:nth-child(2) {
+    font-size: 5rem;
+    font-family: CairoBold;
+}
+.contect footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+.contect footer > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 2rem;
+    color: #4F8CCA;
+}
+@media (max-width: 1300px) {
+    .contect header .title {
+        font-size: 2.5rem;
+    }
+    .contect header .title span:nth-child(2) {
+        font-size: 4rem;
+    }
+    .contect footer > div {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .contect {
+        width: 90%;
+    }
+    .contect header {
+        gap: 50px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    .contect header .logo img {
+        max-width: 150px;
+    }
+    .contect header .title {
+        font-size: 1.4rem;
+    }
+    .contect header .title span:nth-child(2) {
+        font-size: 2.5rem;
+    }
+    .contect footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contect footer > div {
+        font-size: 1.2rem;
+    }
+}
