@@ -149,4 +149,14 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    .contect .social .item {
+        height: 30px;
+        width: 40px;
+        font-size: 1.5rem;
+    }
+}
+@media (max-height: 720px) {
+    .contect {
+        padding-top: 150px;
+    }
 }
